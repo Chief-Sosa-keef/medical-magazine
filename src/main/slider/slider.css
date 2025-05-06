@@ -1,0 +1,112 @@
+.slider {
+    position: relative;
+    overflow: hidden; /* Скрыть переполнение */
+    max-width: 100%; /* Ограничить максимальную ширину */
+    margin: auto; /* Центрировать слайдер */
+    
+    margin-bottom: 50px;
+    animation: fadeIn 6s;
+    /* border-radius: 10px;
+    border: 2px solid black; */
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.slides {
+    display: flex; /* Использовать флексбокс для горизонтального выравнивания */
+    transition: transform 0.5s ease; /* Плавный переход */
+    overflow: hidden;
+}
+
+.slide {
+    min-width: 100%; /* Каждый слайд занимает полную ширину */
+    box-sizing: border-box; /* Включить отступы и границы в ширину */
+    position: relative; /* Для позиционирования текста */
+    height: 85vh; /* Высота слайда адаптируется по высоте окна */
+}
+.slide img {
+    width: 100%; /* Изображение занимает всю ширину слайда */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+.prev,.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2; 
+    transition: 0.5s;
+} 
+
+.prev {
+    left: 10px; /* Расположение кнопки "Назад" */
+}
+
+.next {
+    right: 10px; /* Расположение кнопки "Вперед" */
+}
+.prev:hover, .next:hover{
+    color: black;
+}
+.text {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%); /* Центрирование текста */
+    color: white;
+    font-weight: 900;
+    font-size: 19px;
+    text-shadow: 0 0 5px rgb(95, 95, 95);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center; /* Центриров ание текста */
+    width: 90%; /* Ширина текста */
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень для текста */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInOut {
+    0%, 25% {
+        opacity: 0;
+    }
+    50%, 75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    75%{
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+.textMainSlider{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-shadow: 0 0 10px white;
+    letter-spacing: 2px;margin-bottom: 5px;
+}

@@ -1,0 +1,114 @@
+
+:root {
+  --primary-color: rgb(22, 46, 61);
+  --secondary-color: rgb(246, 255, 255);
+  --hover-color: rgb(0, 0, 0);
+}
+
+body {
+  margin: 0;
+  /* height: 3000px; */
+  scroll-behavior: smooth;
+  /* background-color: var(--secondary-color); */
+  background-color: rgb(241, 242, 255);
+}
+body::selection{
+  background-color: rgba(165, 42, 42, 0.463);
+  font-weight: 900;
+}
+
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+/* Анимации */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  75%{
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 25% {
+      opacity: 0;
+  }
+  50%, 75% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-100%);
+  }
+  75%{
+      transform: translateY(-100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+@keyframes slideOut {
+  from {
+      transform: translateY(100%);
+  }
+  75%{
+      transform: translateY(100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+/* Медиа-запросы для адаптации на разных устройствах */
+@media (max-width: 768px) {
+  .slide {
+      height: 50vh; /* Уменьшение высоты для планшетов и мобильных устройств */
+  }
+}
+
+@media (max-width: 480px) {
+  .slide {
+      height: 40vh; /* Уменьшение высоты для мобильных устройств */
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .text {
+      font-size: 14px; /* Уменьшение размера текста на мобильных устройствах */
+  }
+
+  button {
+      padding: 8px; /* Уменьшение отступов кнопок на мобильных устройствах */
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+      font-size: 12px; /* Дополнительное уменьшение размера текста на очень малых экранах */
+  }
+
+  button {
+      padding: 5px; /* Уменьшение отступов кнопок на очень малых экранах */
+  }
+}
+
+
+
+
+

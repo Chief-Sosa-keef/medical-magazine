@@ -1,0 +1,220 @@
+:root {
+    --primary-blue: #2563eb;
+    --light-blue: #93c5fd;
+    --dark-blue: #1e40af;
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-700: #374151;
+    --gray-900: #111827;
+    --white: #ffffff;
+}
+
+.journal-section {
+    background: linear-gradient(var(--gray-50), var(--white));
+    padding: 4rem 1rem;
+}
+
+.section-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h1 {
+    font-size: 2.25rem;
+    color: var(--gray-900);
+    margin-bottom: 1rem;
+}
+
+.section-header h1 span {
+    color: var(--primary-blue);
+}
+
+.header-divider {
+    width: 6rem;
+    height: 2px;
+    background: var(--primary-blue);
+    margin: 0 auto;
+}
+
+/* Content Grid */
+.content-grid {
+    display: grid;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Cards */
+.info-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(1, 94, 255, 0.22);
+    
+}
+
+.highlight {
+    border-left: 4px solid var(--primary-blue);
+    
+}
+.info-mision{
+    
+    border-left: 4px solid var(--primary-blue);
+}
+
+.university-card {
+    background: #eef2ff;
+    border: 1px solid var(--light-blue);
+    padding: 10px;
+    padding: 10px 10px 10px 30px;
+    border-radius: 20px;
+}
+
+/* Typography */
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.main-text {
+    font-size: 1.125rem;
+    color: var(--gray-700);
+    margin-bottom: 1rem;
+}
+
+.secondary-text {
+    color: var(--gray-700);
+    opacity: 0.9;
+}
+
+/* Icons */
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Benefits List */
+.benefits-list {
+    list-style: none;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.benefit-icon {
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+/* Rubrics */
+.rubrics-section {
+    margin: 4rem 0;
+}
+
+.rubrics-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.rubrics-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .rubrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .rubrics-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.rubric-card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.rubric-card:hover {
+    transform: scale(1.05);
+}
+
+.blue-bg { background: #dbeafe; color: #1e40af; }
+.green-bg { background: #dcfce7; color: #166534; }
+.purple-bg { background: #f3e8ff; color: #6b21a8; }
+.amber-bg { background: #fef3c7; color: #854d0e; }
+
+/* Contacts */
+.contacts-section {
+    background: var(--gray-900);
+    color: var(--white);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    margin-top: 5rem;
+}
+
+.contacts-info {
+    padding: 3rem;
+}
+
+.cta-section {
+    background: var(--primary-blue);
+    padding: 3rem;
+    text-align: center;
+}
+
+.cta-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+button {
+    background: var(--white);
+    color: var(--primary-blue);
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #e2e8f0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-icon {
+    margin-top: 0.25rem;
+}

@@ -1,0 +1,113 @@
+.info_block_container {
+    max-width: 1920px; /* Фиксируем максимальную ширину */
+    margin: 0 auto; /* Центрируем на широких экранах */
+    padding: 20px;
+    animation: fadeIn 5s;
+  }
+  
+  .info_block_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .info_block_row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap; /* Запрещаем перенос строк */
+  }
+  
+  /* Стили для картинки */
+  #img_in_info_block {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px; 
+    border: 1px solid transparent; 
+    transition: all 1s;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.8));
+    object-fit: cover; /* Чтобы изображение не искажалось */
+  }
+  
+  #img_in_info_block:hover {
+    filter: drop-shadow(3px 3px 50px rgb(0, 123, 255));
+  }
+  
+  /* Адаптация для очень узких экранов (опционально) */
+  @media (max-width: 1200px) {
+    .info_block_row {
+        flex-wrap: wrap;
+    }
+    
+    #img_in_info_block {
+        order: 0; /* Картинка всегда будет в середине */
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .info_block_row {
+        flex-wrap: wrap;
+    }
+    
+    #img_in_info_block {
+        order: 0; /* Картинка всегда будет в середине */
+        display: none;
+    }
+  }
+  
+  @media(min-width:2800px){
+    .info_head{
+      font-size: 30px;
+      max-width: 700px;
+      margin:50px 120px ;
+    }
+    #img_in_info_block{
+      order: 0; /* Картинка всегда будет в середине */
+      width: 500px;
+  }
+  }
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  .info_block_head{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 150px;
+    margin:  0  0px 0;
+    animation: fadeIn 3.5s;
+    
+  }
+  
+  
+  .info_head{
+    max-width: 340px;
+    margin: 40px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 18px;
+    color: rgb(4, 30, 46);
+    transition: all 0.3s;
+    margin-right: 65px;
+    margin-left: 65px;
+    font-size: 1.9vh;
+    
+  }
+  .info_head:hover{
+    text-shadow: 2px 2px 12px rgba(204, 204, 204, 0.9), /* Яркая тень при наведении */
+    6px 6px 24px rgba(255, 255, 255, 0.7);
+    text-shadow: 2px 2px 20px rgba(53, 158, 223, 0.738);
+    cursor: pointer;
+    color: rgb(5, 113, 181);
+    transform: scale(1.07);
+  }
+  

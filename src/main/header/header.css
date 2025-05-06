@@ -1,0 +1,59 @@
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 17px;
+        border-bottom: 2px solid rgb(3, 23, 80);
+        backdrop-filter: blur(8px);
+        position: sticky;
+        width: 100%;
+        z-index: 30;
+        padding: 17px 0;
+        animation: slideIn 3s;
+        top: 0;
+        align-items: center;
+    }
+    
+    header h4 {
+        margin: 0 10px;
+        
+        font-size: 22px;
+        min-width: 432px;
+        font-weight: 900;
+        
+        color: rgb(1, 15, 32);
+    }
+    
+    .navigation {
+        margin-right: 10px;
+    }
+    
+    .nav-link {
+        margin: 0 12px;
+        color: rgb(7, 46, 82);
+        font-weight: 800;
+        text-decoration: none;
+        font-size: 21px;
+        transition: color 0.5s;
+        position: relative;
+    }
+    
+    .nav-link:hover {
+        color: rgb(13, 74, 118);
+    }
+    
+    .nav-link::after {
+        content: '';
+        width: 0;
+        height: 2.2px;
+        background-color: rgb(13, 74, 118);
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+        transition: all 0.4s ease-in;
+        border-radius: 120px;
+    }
+    
+    .nav-link:hover::after {
+        width: 98%; 
+        left: 0;
+    }
