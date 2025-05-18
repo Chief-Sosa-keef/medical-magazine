@@ -25,9 +25,13 @@
     border-right: 3px solid transparent;
     display: none;
     color: #00588e;
+    text-align: center;
   }
   .main_title_viss{
-    display: block !important;
+    display: block;
+    position: relative;
+    top: 50px;
+    margin-bottom: 70px;
   }
   .nwc_diss{
     display: none;

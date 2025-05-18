@@ -1,0 +1,145 @@
+/* SoloDeveloperCard.css */
+.dev-card {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+}
+
+.dev-content {
+  text-align: center;
+}
+
+.dev-header {
+  margin-bottom: 1.5rem;
+}
+
+.dev-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #f0f0f0;
+  border:3px solid #97b5eb;
+box-shadow: 0 0 10px #00acdf;
+}
+
+.dev-title {
+  font-size: 2rem;
+  color: #2d3436;
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+.dev-subtitle {
+  color: #636e72;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.dev-bio {
+  color: #4a4a4a;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+  padding: 0 1rem;
+}
+
+.dev-stack {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.dev-stack h3 {
+  color: #2d3436;
+  margin-bottom: 1rem;
+}
+
+.stack-items {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.stack-item {
+  background: #ffffff;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+  color: #0984e3;
+  font-size: 0.9rem;
+  transition: all 0.3s; cursor: pointer;
+}
+.stack-item:hover{
+  transform: translateY(-8px);
+  background-color: #0984e3;
+  color: white;
+}
+.dev-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.dev-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a4a4a;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.dev-link:hover {
+  border-color: #0984e3;
+  color: #0984e3;
+  background: rgba(9, 132, 227, 0.05);
+}
+#we-link:hover {
+  border-color: #1fe309;
+  color: #004a21;
+  background: rgba(0, 255, 64, 0.05);
+}
+#git-link:hover{
+  border-color: #6009e3;
+  color: #37004a;
+  background: rgba(119, 0, 255, 0.05);
+}
+
+.dev-link img {
+  width: 25px;
+  height: 25px;
+}
+
+.dev-footer {
+  color: #95a5a6;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+.link-span-contact{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 10px greenyellow;
+}
+.link-span-contact img{
+  width: 30px;
+  height: 30px;
+}
+#we-link img{
+  width: 28px;
+  height: 28px;
+}

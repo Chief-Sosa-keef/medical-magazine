@@ -149,7 +149,7 @@
 
 @media (min-width: 1024px) {
     .rubrics-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -185,6 +185,7 @@
     background: var(--primary-blue);
     padding: 3rem;
     text-align: center;
+    background: #009bff;
 }
 
 .cta-icon {

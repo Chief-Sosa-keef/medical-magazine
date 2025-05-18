@@ -15,9 +15,27 @@
     
     
     
+    #for-animetion{
+        animation: fadeIn 4.5s;
+    }
     
-    
-    
+.no-results {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 176px;
+        background: transparent;
+        text-transform: uppercase;
+        font-weight: 900;
+        text-shadow: 0 0 40px rgb(18, 63, 186);
+        color: rgb(0, 84, 112);
+        border: 3px solid #038fec;
+        text-align: center;
+    }
     
     .article-link {
         text-decoration: none;
@@ -66,13 +84,23 @@
         opacity: 0;
     }
     
-    .direction-card:nth-child(1) { animation-delay: 2.5s; }
-    .direction-card:nth-child(2) { animation-delay: 2.8s; }
-    .direction-card:nth-child(3) { animation-delay: 3.05s; }
-
-
-
-
+    .initial-render .direction-card:nth-child(1) { animation-delay: 2.5s; }
+    .initial-render .direction-card:nth-child(2) { animation-delay: 2.8s; }
+    .initial-render .direction-card:nth-child(3) { animation-delay: 2.05s; }
+@keyframes your-animation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.direction-card {
+  animation: your-animation 0.5s ease;
+  opacity: 1;
+}
 
     /* Direction.css */
 .direction-container {
@@ -83,7 +111,7 @@
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 2rem;
     background-color: #f8fafc00;
-    margin-bottom: 100px;
+    margin-bottom: 4px;
 }
 
 /* Стили для карточки направления */
@@ -98,7 +126,7 @@
 
 .direction-card:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-    transform: translateY(-2px);
+    transform: translateY(-1px);
 }
 
 /* Заголовок категории */
@@ -163,7 +191,7 @@
     text-shadow: 0 0 10px #00b4d8;
 }
 
-/* Анимация появления */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -175,11 +203,15 @@
         opacity: 1;
     }
 }
-
+li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
 .direction-card {
     animation: fadeIn 2.4s ease forwards;
     opacity: 0;
-    margin-bottom: 180px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 

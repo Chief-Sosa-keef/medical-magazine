@@ -100,6 +100,7 @@
     margin-right: 65px;
     margin-left: 65px;
     font-size: 1.9vh;
+    min-width: 310px;
     
   }
   .info_head:hover{

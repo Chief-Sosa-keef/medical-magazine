@@ -17,10 +17,13 @@
         margin: 0 10px;
         
         font-size: 22px;
-        min-width: 432px;
+        
         font-weight: 900;
         
         color: rgb(1, 15, 32);
+    }
+    #Link-h1{
+        text-decoration: none;
     }
     
     .navigation {
@@ -34,26 +37,123 @@
         text-decoration: none;
         font-size: 21px;
         transition: color 0.5s;
-        position: relative;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: rgb(13, 74, 118);
+        }
+        
+        .nav-link::after {
+            content: '';
+            width: 0;
+            height: 2.2px;
+            background-color: rgb(13, 74, 118);
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transition: all 0.4s ease-in;
+            border-radius: 120px;
+        }
+        
+        .nav-link:hover::after {
+            width: 98%; 
+            left: 0;
+        }
+        #logo-text{
+            margin: 0;
+            font-size: 24px !important;
+            font-family: 'Space Mono', monospace;
+        }
+        .journal-name {
+            font-size: 24px;
+            font-weight: 700;
+            text-shadow: 0 0 6px rgb(255, 255, 255);
+        }
+        
+        .journal-name span {
+            color: #009fe8;
+            text-shadow: 0 0 6px rgb(2, 139, 189);
+        }
+        #head-text-logo{
+            font-size: 30px;
+            letter-spacing: 7px;
+            font-weight: 900;
+            text-shadow: 0 0 6px rgb(0, 0, 0);
+        }
+
+        .head-logo{
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+            animation: spin 6s linear infinite;
+            width: 50px;
+            filter: drop-shadow(2px 0 10px rgb(0, 234, 255));
+        }
+    /* header.css */
+    .mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 20px;
+    }
+
+    .burger-icon {
+    display: flex;
+    width: 25px;
+    height: 3px;
+    background: #072e52;
+    margin: 4px 0;
+    transition: 0.3s;
+    }
+
+    .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    background: white;
+    width: 100%;
+    max-width: 250px;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    }
+
+    .mobile-menu.open {
+    display: block;
+    }
+
+    .mobile-nav-link {
+    display: block;
+    padding: 12px 20px;
+    color: #072e52;
+    text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+    .desktop-menu {
+        display: none;
     }
     
-    .nav-link:hover {
-        color: rgb(13, 74, 118);
+    .mobile-menu-button {
+        display: block;
     }
     
-    .nav-link::after {
-        content: '';
-        width: 0;
-        height: 2.2px;
-        background-color: rgb(13, 74, 118);
-        position: absolute;
-        bottom: -3px;
-        left: 50%;
-        transition: all 0.4s ease-in;
-        border-radius: 120px;
+    .mobile-menu-button.active .burger-icon:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
     }
     
-    .nav-link:hover::after {
-        width: 98%; 
-        left: 0;
+    .mobile-menu-button.active .burger-icon:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-button.active .burger-icon:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    }
+    .logo{
+        display: flex;
+        align-items: center;
     }

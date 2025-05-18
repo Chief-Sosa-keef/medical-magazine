@@ -1,31 +1,28 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import Head from './main/header/head.tsx'
-import Banner_cont from './main/banner/banner-cont.tsx'
-import Info_block from './main/info_block/info_block.tsx'
-import Button_next from './main/butt_next/butt_next.tsx'
-import Slider from './main/slider/slider.tsx'
-import './main/scrollbar.css'
-import Footer from './footer/footer.tsx'
-import ScientificJournalAbout from './main/last_info_block/lastInfo.block.tsx'
-const headerLinks = [
-  
-  { url: "index.html", text: "Главная" },
-  { url: "catalog.html", text: "Сводка" },
-  { url: "events.html", text: "Мероприятия" },
-  { url: "#", text: "Ссылка 4" }
-  ];
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './main/Layout'
+import HomePage from './pages/HomePage'
+import CatalogPage from './pages/catalog'
+import Events from './pages/event'
+import NotFoundPage from './pages/NotFoundPage'
+import Article from './pages/Article'
+import App from './pages/EventPage'
+import EventPage from './pages/EventPage'
+
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <Head title='medical park' links={headerLinks} />
-    <Banner_cont />
-    <Info_block />
-    <Button_next link='#slider'  />
-    <Slider />
-    <ScientificJournalAbout />
-    <Footer />
-  </StrictMode>
-
-)
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route path="catalog" element={<CatalogPage />} />
+        <Route path="events" element={<Events />} />
+        {/* Добавляем новый маршрут для статей */}
+        {/* <Route path="articles/:articleId" element={<ArticlePage />} /> */}
+        <Route path='article/:id' element={<Article/>} />
+        <Route path="*" element={<NotFoundPage />} />
+        <Route path='/eventsPage' element={<App />} />
+        <Route path="/events/:id" element={<EventPage />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>)

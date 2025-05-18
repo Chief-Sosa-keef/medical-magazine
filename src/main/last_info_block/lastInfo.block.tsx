@@ -37,12 +37,7 @@ const ScientificJournalAbout: React.FC = () => {
             title: "Медецинская наука", 
             desc: "Лечить людей - это не только наука,но и искусство", 
             color: "purple" 
-        },
-        { 
-            title: "Психология", 
-            desc: "Работы студентов и аспирантов", 
-            color: "amber" 
-        },
+        }
     ];
 
     const contacts: ContactItem[] = [

@@ -1,45 +1,47 @@
-import ArticleTemplate from "./Шаблон/ArticleTemplate";
+    import { useParams } from 'react-router-dom';
+    import { useState, useEffect } from 'react';
+    import { articles, Article } from './article'; // Замените на актуальный путь
+    import ArticleTemplate from './shablon/ArticleTemplate';
 
-const MedicalArticlePage = () => {
+    const ArticlePage: React.FC = () => {
+    const { id } = useParams<{ id: string }>();
+    const [article, setArticle] = useState<Article | null>(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
+
+    useEffect(() => {
+        // Поиск статьи по id
+        const foundArticle = articles.find((art) => art.id === id);
+        if (foundArticle) {
+        setArticle(foundArticle);
+        } else {
+        setError('Статья не найдена');
+        }
+        setLoading(false);
+    }, [id]);
+
+    if (loading) {
+        return <div>Загрузка...</div>;
+    }
+
+    if (error) {
+        return <div>{error}</div>;
+    }
+
+    if (!article) {
+        return null; // или можно отобразить сообщение, что статья отсутствует
+    }
+
+    // Передача данных в компонент ArticleTemplate
     return (
-        
         <ArticleTemplate
-        title="Современные методы лечения диабета"
-        author="Доктор Иванова М.В."
-        date="25 октября 2023"
-        tags={[
-        { text: 'Диагностика', anchor: 'diagnostika' },
-            { text: 'Лечение', anchor: 'lechenie' },
-            { text: 'Профилактика', anchor: 'profilaktika' }
-            ]}
-            content={{
-            sections: [
-                {
-                id: 'diagnostika',
-                title: "Современная диагностика",
-                text: "Новые методы ранней диагностики...",
-                image: "https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop&crop=entropy&auto=format"
-                },
-                {
-                id: 'lechenie',
-                title: "Инновационное лечение",
-                text: "Последние достижения в терапии...",
-                list: [
-                    "Препараты нового поколения",
-                    "Персонализированные схемы",
-                    "Хирургические методы"
-                ]
-                },
-                {
-                id: 'profilaktika',
-                title: "Профилактические меры",
-                text: "Эффективные методы профилактики...",
-                image: "https://images.unsplash.com/photo-1581595219315-a187dd40c322?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop&crop=entropy&auto=format"
-                }
-            ]
-            }}
+        title={article.title}
+        author={article.author}
+        date={article.date}
+        tags={article.tags}
+        content={article.content}
         />
-        );
+    );
     };
 
-    export default MedicalArticlePage;
+export default ArticlePage;
