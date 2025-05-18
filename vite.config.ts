@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
   plugins: [react()],
-  // УДАЛИТЬ СЕКЦИЮ css.postcss
+  base: "/medical-magazine/", // Замените на название вашего репозитория
 })
