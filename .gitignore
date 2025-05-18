@@ -1,15 +1,15 @@
-# Игнорировать всё на рабочем столе, кроме папки проекта
-/*
 !universitet_react/
 !.gitignore
 !.gitattributes
 
 # Внутри проекта
 node_modules/
-root/
 dist/
 .DS_Store
 *.log
 *.zip
 *.lnk
 *.url
+
+# Разрешить папку public
+!public/
