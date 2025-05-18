@@ -1,6 +1,8 @@
 # Игнорировать всё на рабочем столе, кроме папки проекта
 /*
 !universitet_react/
+!.gitignore
+!.gitattributes
 
 # Внутри проекта
 node_modules/
