@@ -1,35 +1,13 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Игнорировать всё на рабочем столе, кроме папки проекта
+/*
+!universitet_react/
 
-# Игнорируем папку сборки (теперь она называется root)
-root  # ← ЗАМЕНИТЕ dist НА root
-
-# SSR-сборка (если не используется)
-dist-ssr
-
-# Локальные файлы
-*.local
-
-# Зависимости
-node_modules
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Внутри проекта
+node_modules/
+root/
+dist/
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# Опционально: игнорируем исходники, если деплоите только сборку
-# src
-# public
+*.log
+*.zip
+*.lnk
+*.url
