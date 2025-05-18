@@ -7,10 +7,17 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
+# Игнорируем папку сборки (теперь она называется root)
+root  # ← ЗАМЕНИТЕ dist НА root
+
+# SSR-сборка (если не используется)
 dist-ssr
+
+# Локальные файлы
 *.local
+
+# Зависимости
+node_modules
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +29,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Опционально: игнорируем исходники, если деплоите только сборку
+# src
+# public
