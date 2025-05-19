@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
   plugins: [react()],
-  base: "/universitet_react/", // Добавьте слеш в конце!
+  base: "/", // Добавьте слеш в конце!
   build: {
-    outDir: "dist",
+    outDir: "docs",
     assetsDir: "assets",
     emptyOutDir: true,
     rollupOptions: {
