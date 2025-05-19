@@ -198,6 +198,9 @@
         font-size: 9px !important;
         bottom: 1%;
     }
+    .slide{
+        height: 25vh;
+    }
 }
 .slide {
     position: relative;

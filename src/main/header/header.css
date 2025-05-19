@@ -70,7 +70,16 @@
             font-weight: 700;
             text-shadow: 0 0 6px rgb(255, 255, 255);
         }
-        
+        @media (max-width:480px) {
+            #head-text-logo{
+                font-size: 18px;
+            }
+        }
+        @media (max-width:340px) {
+            #head-text-logo{
+                font-size: 15px;
+            }
+        }
         .journal-name span {
             color: #009fe8;
             text-shadow: 0 0 6px rgb(2, 139, 189);

@@ -118,7 +118,7 @@ export default function Info_block() {
                     <div >
                         <img 
                             id="img_in_info_block"
-                            src="src/assets/medical.png" 
+                            src="../public/medical.png" 
                             alt="Последние достижения медицинской науки" 
                         />
                     </div>

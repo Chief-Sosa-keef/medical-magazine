@@ -9,6 +9,7 @@ body {
   margin: 0;
   /* height: 3000px; */
   scroll-behavior: smooth;
+  
   /* background-color: var(--secondary-color); */
   background-color: rgb(241, 242, 255);
 }
@@ -76,13 +77,13 @@ html{
 /* Медиа-запросы для адаптации на разных устройствах */
 @media (max-width: 768px) {
   .slide {
-      height: 50vh; /* Уменьшение высоты для планшетов и мобильных устройств */
+      height: 40vh; /* Уменьшение высоты для планшетов и мобильных устройств */
   }
 }
 
 @media (max-width: 480px) {
   .slide {
-      height: 40vh; /* Уменьшение высоты для мобильных устройств */
+      height: 30vh; /* Уменьшение высоты для мобильных устройств */
   }
 }
 

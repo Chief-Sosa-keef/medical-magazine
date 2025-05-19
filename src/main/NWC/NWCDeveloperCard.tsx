@@ -7,7 +7,7 @@
         <div className="dev-content">
             <div className="dev-header">
             <img 
-                src="../src/assets/react.svg" 
+                src="../public/react.svg" 
                 alt="Creator" 
                 className="dev-avatar"
             />
@@ -33,15 +33,15 @@
 
             <div className="dev-links">
             <a href="https://github.com/Chief-Sosa-keef" className="dev-link" id='git-link'>
-                <img src="../src/assets/github.gif" alt="GitHub" />
+                <img src="../public/github.gif" alt="GitHub" />
                 GitHub
             </a>
             <a href="https://t.me/NexaWebCreators" className="dev-link">
-                <img src="../src/assets/tg.gif" alt="Telegram" />
+                <img src="../public/tg.gif" alt="Telegram" />
                 Telegram
             </a>
             <a href="https://wa.me/79665000506" className="dev-link" id='we-link'>
-                <img src="../src/assets/whatsapp.png" alt="Email" />
+                <img src="../public/whatsapp.png" alt="Email" />
                 WhatsApp
             </a>
             </div>
