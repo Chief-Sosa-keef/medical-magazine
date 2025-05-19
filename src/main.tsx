@@ -11,7 +11,7 @@ import EventPage from './pages/EventPage'
 
 
 createRoot(document.getElementById('root')!).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/universitet_react/">
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
