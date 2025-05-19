@@ -9,10 +9,10 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./root",
+    "outDir": "dist",
     "rootDir": "./src",
     "types": ["vite/client"]
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "root"]
+  "exclude": ["node_modules", "dist"]
 }

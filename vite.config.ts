@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: "/universitet_react/", // Добавьте слеш в конце!
   build: {
-    outDir: "root",
+    outDir: "dist",
     assetsDir: "assets",
     emptyOutDir: true,
     rollupOptions: {
