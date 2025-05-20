@@ -2,7 +2,7 @@
     max-width: 1920px; /* Фиксируем максимальную ширину */
     margin: 0 auto; /* Центрируем на широких экранах */
     padding: 20px;
-    animation: fadeIn 5s;
+    animation: fadeIn 3s;
   }
   
   .info_block_grid {
@@ -84,7 +84,7 @@
     max-width: 100%;
     padding: 150px;
     margin:  0  0px 0;
-    animation: fadeIn 3.5s;
+    animation: fadeIn 4s;
     
   }
   

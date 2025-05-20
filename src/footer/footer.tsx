@@ -8,21 +8,21 @@ return (
         {/* Левый блок - контакты */}
         <div className="footer-section">
         <div className="logo-container">
-            <img src="../docs/react.svg" alt="Логотип" className="dna-logo" />
+            <img src="./react.svg" alt="Логотип" className="dna-logo" />
             <span className="journal-name">MED<span>SCIENCE</span></span>
         </div>
         <p className="footer-motto">"Где наука встречает клиническую практику"</p>
         
         <div className="contact-item">
-            <img src="../docs/react.svg" alt="Адрес"   className='img_in_foot'/>
+            <img src="./react.svg" alt="Адрес"   className='img_in_foot'/>
             <span>Санкт-Петербург, ул. Академика Павлова, 12</span>
         </div>
         <div className="contact-item">
-            <img src="../docs/react.svg" alt="Email"  className='img_in_foot' />
+            <img src="./react.svg" alt="Email"  className='img_in_foot' />
             <span>editor@medscience.ru</span>
         </div>
         <div className="contact-item">
-            <img src="../docs/react.svg" alt="Телефон"  className='img_in_foot' />
+            <img src="./react.svg" alt="Телефон"  className='img_in_foot' />
             <span>+7 (812) 333-55-77</span>
         </div>
         </div>
@@ -42,11 +42,11 @@ return (
         <div className="footer-section">
         <h3>Контакты</h3>
         <div className="contact-item">
-            <img src="../docs/react.svg" alt="Адрес" className='img_in_foot'/>
+            <img src="./react.svg" alt="Адрес" className='img_in_foot'/>
             <span>г. Архангельск, пр. Ломоносова, 4</span>
         </div>
         <div className="contact-item">
-            <img src="../docs/react.svg" alt="Email"  className='img_in_foot'/>
+            <img src="./react.svg" alt="Email"  className='img_in_foot'/>
             <span>unijournal@nsmu.ru</span>
         </div>
         
