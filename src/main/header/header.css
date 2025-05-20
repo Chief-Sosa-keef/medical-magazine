@@ -108,17 +108,22 @@
     cursor: pointer;
     padding: 10px;
     margin-right: 20px;
+    background-color: #009fe8;
+    box-shadow: 0 0 10px #00a0ff;
     }
 
     .burger-icon {
     display: flex;
     width: 25px;
     height: 3px;
-    background: #072e52;
+    background: #ffffff;
     margin: 4px 0;
     transition: 0.3s;
     }
 
+    button:hover{
+        background-color: #009fe8 !important;
+    }
     .mobile-menu {
     display: none;
     position: fixed;
