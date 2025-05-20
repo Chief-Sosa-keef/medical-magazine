@@ -2,7 +2,7 @@
     max-width: 1920px; /* Фиксируем максимальную ширину */
     margin: 0 auto; /* Центрируем на широких экранах */
     padding: 20px;
-    animation: fadeIn 2s ease-in forwards;
+    animation: fadeIn 2s ease-out forwards;
     animation-delay: 2.5s;
     opacity: 0;
 

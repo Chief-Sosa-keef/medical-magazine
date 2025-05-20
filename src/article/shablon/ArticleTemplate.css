@@ -21,7 +21,7 @@
         color: var(--text-color);
         background: linear-gradient(160deg, #f8fcff 0%, #e6f4ff 100%);
         opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
+    animation: fadeIn 2s ease-out forwards;
     animation-delay:3s;
     }
     

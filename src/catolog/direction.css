@@ -17,7 +17,7 @@
     
     #for-animetion{opacity:  0;
         
-        animation: fadeInUp 1.5s ease-in forwards !important;
+        animation: fadeInUp 2s ease-out forwards !important;
         animation-delay: 3s !important;
     }
     
