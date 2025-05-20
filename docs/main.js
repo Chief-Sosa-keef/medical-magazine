@@ -1,0 +1,11 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './main/Layout';
+import HomePage from './pages/HomePage';
+import CatalogPage from './pages/catalog';
+import Events from './pages/event';
+import NotFoundPage from './pages/NotFoundPage';
+import Article from './pages/Article';
+import EventPage from './pages/EventPage';
+createRoot(document.getElementById('root')).render(_jsx(BrowserRouter, { basename: "/universitet_react", children: _jsx(Routes, { children: _jsxs(Route, { path: "/", element: _jsx(Layout, {}), children: [_jsx(Route, { index: true, element: _jsx(HomePage, {}) }), _jsx(Route, { path: "catalog", element: _jsx(CatalogPage, {}) }), _jsx(Route, { path: "events", element: _jsx(Events, {}) }), _jsx(Route, { path: "article/:id", element: _jsx(Article, {}) }), _jsx(Route, { path: "events/:id", element: _jsx(EventPage, {}) }), _jsx(Route, { path: "*", element: _jsx(NotFoundPage, {}) })] }) }) }));
