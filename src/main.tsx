@@ -9,7 +9,7 @@ import Article from './pages/Article'
 import EventPage from './pages/EventPage'
 
 createRoot(document.getElementById('root')!).render(
-  <BrowserRouter basename="">
+  <BrowserRouter basename="/universitet_react">
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
