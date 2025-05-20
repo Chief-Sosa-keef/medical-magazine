@@ -218,4 +218,68 @@ button:hover {
 
 .contact-icon {
     margin-top: 0.25rem;
+}@media (max-width: 320px) {
+    .journal-section {
+        padding: 2rem 0.5rem; /* Уменьшаем отступы */
+    }
+
+    .section-header h1 {
+        font-size: 1.75rem; /* Уменьшаем размер заголовка */
+    }
+
+    .section-header h1 span {
+        font-size: 1.75rem; /* Уменьшаем размер выделенного текста */
+    }
+
+    .content-grid {
+        gap: 1.5rem; /* Уменьшаем расстояние между элементами */
+    }
+
+    .info-card {
+        padding: 1.5rem; /* Уменьшаем отступы в карточках */
+    }
+
+    .card-title {
+        font-size: 1.25rem; /* Уменьшаем размер заголовка карточки */
+    }
+
+    .main-text {
+        font-size: 1rem; /* Уменьшаем размер основного текста */
+    }
+
+    .secondary-text {
+        font-size: 0.9rem; /* Уменьшаем размер вторичного текста */
+    }
+
+    .rubrics-section h2 {
+        font-size: 1.5rem; /* Уменьшаем размер заголовка рубрик */
+    }
+
+    .rubric-card {
+        padding: 1rem; /* Уменьшаем отступы в карточках рубрик */
+    }
+
+    .contacts-section {
+        padding: 2rem 1rem; /* Уменьшаем отступы в секции контактов */
+    }
+
+    .cta-section {
+        padding: 2rem 1rem; /* Уменьшаем отступы в секции CTA */
+    }
+
+    .cta-icon {
+        font-size: 2.5rem; /* Уменьшаем размер иконки CTA */
+    }
+
+    button {
+        padding: 0.5rem 1.5rem; /* Уменьшаем отступы кнопки */
+    }
+
+    .contact-item {
+        gap: 0.5rem; /* Уменьшаем расстояние между элементами контакта */
+    }
+
+    .contact-icon {
+        margin-top: 0; /* Убираем верхний отступ у иконки контакта */
+    }
 }

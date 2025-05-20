@@ -221,3 +221,62 @@
 .img_in_foot{
     animation: spin 5s linear infinite;
 }
+@media (max-width: 480px) {
+    .med-footer {
+        padding-top: 30px; /* Уменьшаем верхний отступ */
+    }
+
+    .footer-container {
+        padding: 0 10px; /* Уменьшаем боковые отступы */
+    }
+
+    .journal-name {
+        font-size: 22px; /* Уменьшаем размер заголовка журнала */
+    }
+
+    .footer-motto {
+        font-size: 16px; /* Уменьшаем размер слогана */
+    }
+
+    .contact-item {
+        margin-bottom: 10px; /* Уменьшаем нижний отступ */
+    }
+
+    .footer-section h3 {
+        font-size: 20px; /* Уменьшаем размер заголовков секций */
+        margin-bottom: 15px; /* Уменьшаем нижний отступ */
+    }
+
+    .footer-links li {
+        margin-bottom: 8px; /* Уменьшаем нижний отступ для пунктов списка */
+    }
+
+    .subscribe-form input {
+        font-size: 14px; /* Уменьшаем размер шрифта для поля ввода */
+    }
+
+    .subscribe-form button {
+        padding: 0 10px; /* Уменьшаем отступы кнопки */
+    }
+
+    .social-media img {
+        width: 30px; /* Уменьшаем размер иконок социальных сетей */
+        height: 30px; /* Уменьшаем размер иконок социальных сетей */
+    }
+
+    .app-buttons img {
+        height: 38px; /* Уменьшаем размер кнопок приложения */
+    }
+
+    .footer-bottom {
+        padding: 15px 0; /* Уменьшаем отступы в нижней части футера */
+    }
+
+    .copyright {
+        font-size: 12px; /* Уменьшаем размер шрифта для копирайта */
+    }
+
+    .footer-links-bottom a {
+        font-size: 12px; /* Уменьшаем размер шрифта для ссылок */
+    }
+}

@@ -45,7 +45,7 @@ const Header = ({ links }: HeaderProps) => {
   return (
     <header>
       <div className="logo">
-        <img src="./react.svg" alt="Logo" className="head-logo" />
+        <img src="../docs/react.svg" alt="Logo" className="head-logo" />
         <Link to="/" id="Link-h1">
           <h4>
             <span className="journal-name" id="head-text-logo">

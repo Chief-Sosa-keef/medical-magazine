@@ -12,6 +12,7 @@ body {
   
   /* background-color: var(--secondary-color); */
   background-color: rgb(241, 242, 255);
+  overflow-x: hidden;
 }
 body::selection{
   background-color: rgba(165, 42, 42, 0.463);
@@ -75,49 +76,11 @@ html{
 }
 
 /* Медиа-запросы для адаптации на разных устройствах */
-@media (max-width: 768px) {
-  .slide {
-      height: 40vh; /* Уменьшение высоты для планшетов и мобильных устройств */
-  }
-}
-
-@media (max-width: 480px) {
-  .slide {
-      height: 30vh; /* Уменьшение высоты для мобильных устройств */
-  }
-}
 
 
 
-@media (max-width: 768px) {
-  .text {
-      font-size: 14px; /* Уменьшение размера текста на мобильных устройствах */
-  }
-
-  button {
-      padding: 8px; /* Уменьшение отступов кнопок на мобильных устройствах */
-  }
-}
-
-@media (max-width: 480px) {
-  .text {
-      font-size: 12px; /* Дополнительное уменьшение размера текста на очень малых экранах */
-  }
-
-  button {
-      padding: 5px; /* Уменьшение отступов кнопок на очень малых экранах */
-  }
-}
 
 
-@media (max-width: 563px){
-  #head-text-logo{
-    font-size: 20px;
-    letter-spacing: 4px;
-  }
-}
-
-
-*{
-  outline: red;
+* {
+  outline: 1px solid red; /* Временно! Для визуализации границ */
 }

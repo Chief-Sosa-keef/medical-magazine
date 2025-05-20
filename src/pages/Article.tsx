@@ -1,6 +1,6 @@
 
 import MedicalArticlePage from '../article/1st_article';
-import '../index.css';
+
 import BannerCont from '../main/banner/banner-cont';
 
 

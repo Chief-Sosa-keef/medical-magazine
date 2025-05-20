@@ -2,7 +2,7 @@
 .dev-card {
   max-width: 600px;
   margin: 2rem auto;
-  padding: 2rem;
+  padding: 0rem;
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -86,6 +86,7 @@ box-shadow: 0 0 10px #00acdf;
   justify-content: center;
   gap: 1.5rem;
   margin: 2rem 0;
+  flex-wrap:wrap;
 }
 
 .dev-link {
@@ -144,3 +145,146 @@ box-shadow: 0 0 10px #00acdf;
   width: 28px;
   height: 28px;
 }
+/* SoloDeveloperCard.css */
+
+/* Ваши текущие стили... */
+
+@media (max-width: 320px) {
+  .dev-card {
+    padding: 1rem; /* Уменьшаем отступы */
+    margin: 1rem; /* Уменьшаем внешние отступы */
+  }
+
+  .dev-avatar {
+    width: 80px; /* Уменьшаем размер аватара */
+    height: 80px; /* Уменьшаем размер аватара */
+  }
+
+  .dev-title {
+    font-size: 1.5rem; /* Уменьшаем размер заголовка */
+  }
+
+  .dev-subtitle {
+    font-size: 1rem; /* Уменьшаем размер подзаголовка */
+  }
+
+  .dev-bio {
+    font-size: 0.9rem; /* Уменьшаем размер текста биографии */
+    padding: 0; /* Убираем отступы */
+  }
+
+  .stack-items {
+    flex-direction: column; /* Изменяем направление на колонку для мобильных устройств */
+    align-items: center; /* Выравниваем по центру */
+  }
+
+  .stack-item {
+    font-size: 0.8rem; /* Уменьшаем размер шрифта для стека */
+    padding: 0.3rem 0.8rem; /* Уменьшаем отступы */
+  }
+
+  .dev-links {
+    flex-direction: column; /* Изменяем направление на колонку для мобильных устройств */
+    align-items: center; /* Выравниваем по центру */
+    gap: 1rem; /* Увеличиваем расстояние между ссылками */
+  }
+
+  .dev-footer {
+    font-size: 0.8rem; /* Уменьшаем размер шрифта в подвале */
+  }
+
+  .link-span-contact img {
+    width: 25px; /* Уменьшаем размер иконки */
+    height: 25px; /* Уменьшаем размер иконки */
+  }
+}
+@media (max-width: 320px) {
+  .dev-card {
+    padding: 0.5rem; /* Уменьшаем отступы еще больше */
+    margin: 0.5rem; /* Уменьшаем внешние отступы */
+    width: calc(100% - 1rem); /* Устанавливаем ширину на 100% минус отступы */
+  }
+
+  .dev-bio {
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем внешние отступы */
+  }
+
+  .stack-items {
+    padding: 0; /* Убираем отступы */
+  }
+
+  .stack-item {
+    margin: 0; /* Убираем внешние отступы */
+  }
+
+  .dev-links {
+    padding: 0; /* Убираем отступы */
+  }
+
+  .dev-footer {
+    margin: 0; /* Убираем внешние отступы */
+    padding: 0.5rem 0; /* Уменьшаем отступы */
+  }
+}
+@media (max-width: 320px) {
+  .dev-card {
+    padding: 0.5rem; /* Уменьшаем отступы */
+    margin: 0.5rem; /* Уменьшаем внешние отступы */
+    width: calc(100% - 1rem); /* Устанавливаем ширину на 100% минус отступы */
+  }
+
+  .dev-avatar {
+    width: 70px; /* Уменьшаем размер аватара */
+    height: 70px; /* Уменьшаем размер аватара */
+  }
+
+  .dev-title {
+    font-size: 1.3rem; /* Уменьшаем размер заголовка */
+  }
+
+  .dev-subtitle {
+    font-size: 0.9rem; /* Уменьшаем размер подзаголовка */
+  }
+
+  .dev-bio {
+    font-size: 0.8rem; /* Уменьшаем размер текста биографии */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем внешние отступы */
+  }
+
+  .dev-stack {
+    padding: 0.5rem; /* Уменьшаем отступы стека */
+  }
+
+  .stack-items {
+    flex-direction: column; /* Изменяем направление на колонку для мобильных устройств */
+    align-items: center; /* Выравниваем по центру */
+    padding: 0; /* Убираем отступы */
+  }
+
+  .stack-item {
+    font-size: 0.7rem; /* Уменьшаем размер шрифта для стека */
+    padding: 0.3rem 0.5rem; /* Уменьшаем отступы */
+    margin: 0; /* Убираем внешние отступы */
+  }
+
+  .dev-links {
+    flex-direction: column; /* Изменяем направление на колонку для мобильных устройств */
+    align-items: center; /* Выравниваем по центру */
+    gap: 0.5rem; /* Уменьшаем расстояние между ссылками */
+    padding: 0; /* Убираем отступы */
+  }
+
+  .dev-footer {
+    font-size: 0.7rem; /* Уменьшаем размер шрифта в подвале */
+    margin: 0; /* Убираем внешние отступы */
+    padding: 0.5rem 0; /* Уменьшаем отступы */
+  }
+
+  .link-span-contact img {
+    width: 20px; /* Уменьшаем размер иконки */
+    height: 20px; /* Уменьшаем размер иконки */
+  }
+}
+

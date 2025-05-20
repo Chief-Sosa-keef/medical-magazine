@@ -167,3 +167,117 @@
         display: flex;
         align-items: center;
     }
+    @media (max-width: 320px) {
+    header {
+        padding: 12px 10px;
+    }
+
+    #head-text-logo {
+        font-size: 12px !important;
+        letter-spacing: 3px !important;
+        font-weight: 700 !important;
+        text-shadow: none !important;
+    }
+
+    .journal-name {
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        text-shadow: none !important;
+    }
+
+    .journal-name span {
+        color: #009fe8;
+        text-shadow: none !important;
+    }
+
+    .nav-link {
+        font-size: 16px !important;
+        margin: 0 8px !important;
+    }
+
+    .mobile-menu {
+        max-width: 200px;
+        padding: 10px 0;
+        top: 60px; /* уменьшить отступ сверху */
+    }
+
+    .mobile-nav-link {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .head-logo {
+        width: 35px !important;
+        height: 35px !important;
+        margin-right: 10px !important;
+        filter: drop-shadow(1px 0 5px rgb(0, 234, 255)) !important;
+    }
+
+    .mobile-menu-button {
+        margin-right: 10px !important;
+        padding: 8px !important;
+    }
+}
+
+@media (max-width:423px){
+    #head-text-logo{
+        font-size: 18px;
+        letter-spacing: 5px;
+    }
+}@media (max-width: 320px) {
+    header {
+        padding: 12px 10px;
+    }
+
+    #head-text-logo {
+        font-size: 12px !important;
+        letter-spacing: 3px !important;
+        font-weight: 700 !important;
+        text-shadow: none !important;
+    }
+
+    .journal-name {
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        text-shadow: none !important;
+    }
+
+    .journal-name span {
+        color: #009fe8;
+        text-shadow: none !important;
+    }
+
+    .nav-link {
+        font-size: 16px !important;
+        margin: 0 8px !important;
+    }
+
+    .mobile-menu {
+        max-width: 200px;
+        padding: 10px 0;
+        top: 60px; /* уменьшить отступ сверху */
+    }
+
+    .mobile-nav-link {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .head-logo {
+        width: 35px !important;
+        height: 35px !important;
+        margin-right: 10px !important;
+        filter: drop-shadow(1px 0 5px rgb(0, 234, 255)) !important;
+    }
+
+    .mobile-menu-button {
+        margin-right: 10px !important;
+        padding: 8px !important;
+    }
+}
+@media (max-width: 563px){
+  #head-text-logo{
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
+}
