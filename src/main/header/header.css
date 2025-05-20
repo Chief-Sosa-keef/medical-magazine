@@ -73,11 +73,12 @@
         @media (max-width:480px) {
             #head-text-logo{
                 font-size: 18px;
+                letter-spacing: 5px;
             }
         }
         @media (max-width:340px) {
             #head-text-logo{
-                font-size: 15px;
+                font-size: 15px;letter-spacing: 4px;
             }
         }
         .journal-name span {
