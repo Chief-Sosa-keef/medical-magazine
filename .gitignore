@@ -4,7 +4,7 @@
 
 # Внутри проекта
 node_modules/
-
+.nojekyll
 .DS_Store
 *.log
 *.zip
