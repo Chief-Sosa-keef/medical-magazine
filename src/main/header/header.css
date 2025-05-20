@@ -275,7 +275,7 @@
         padding: 8px !important;
     }
 }
-@media (max-width: 563px){
+@media (max-width: 423px){
   #head-text-logo{
     font-size: 12px;
     letter-spacing: 4px;

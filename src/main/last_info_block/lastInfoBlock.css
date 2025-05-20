@@ -283,3 +283,8 @@ button:hover {
         margin-top: 0; /* Убираем верхний отступ у иконки контакта */
     }
 }
+@media (max-width:480px){
+    .info-card{
+        border-left:0 !important ;
+    }
+}
