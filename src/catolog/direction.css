@@ -15,8 +15,10 @@
     
     
     
-    #for-animetion{
-        animation: fadeIn 4.5s;
+    #for-animetion{opacity:  0;
+        
+        animation: fadeInUp 1.5s ease-in forwards !important;
+        animation-delay: 3s !important;
     }
     
 .no-results {
@@ -79,28 +81,7 @@
         }
     }
     
-    .direction-card {
-        animation: fadeInUp 2.6s ease forwards;
-        opacity: 0;
-    }
     
-    .initial-render .direction-card:nth-child(1) { animation-delay: 2.5s; }
-    .initial-render .direction-card:nth-child(2) { animation-delay: 2.8s; }
-    .initial-render .direction-card:nth-child(3) { animation-delay: 2.05s; }
-@keyframes your-animation {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.direction-card {
-  animation: your-animation 0.5s ease;
-  opacity: 1;
-}
 
     /* Direction.css */
 .direction-container {
@@ -207,12 +188,12 @@ li{
     list-style-type: none;
     margin-bottom: 10px;
 }
-.direction-card {
+/* .direction-card {opacity: 0;
     animation: fadeIn 2.4s ease forwards;
-    opacity: 0;
+    animation-delay:2s ;
     margin-bottom: 50px;
     margin-top: 50px;
-}
+} */
 
 
 /* Кастомизация скроллбара */

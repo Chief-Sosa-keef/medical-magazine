@@ -58,7 +58,7 @@
                 key={category} 
                 className="direction-card"
                 style={{
-                    animationDelay: initialRender ? `${2.5 + index * 0.3}s` : '0s'
+                    animationDelay: initialRender ? `${2.5 + index * 0.2}s` : '0s'
                 }}
                 >
                 <h3 className="category-title">{category}</h3>

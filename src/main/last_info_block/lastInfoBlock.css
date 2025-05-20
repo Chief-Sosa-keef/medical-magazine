@@ -23,6 +23,7 @@
 .section-header {
     text-align: center;
     margin-bottom: 4rem;
+    justify-content: center;
 }
 
 .section-header h1 {
@@ -40,6 +41,7 @@
     height: 2px;
     background: var(--primary-blue);
     margin: 0 auto;
+    display: none;
 }
 
 /* Content Grid */
@@ -49,9 +51,12 @@
     margin-bottom: 4rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1122px) {
     .content-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .header-divider{
+        display: block;
     }
 }
 

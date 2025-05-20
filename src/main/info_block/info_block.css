@@ -2,7 +2,10 @@
     max-width: 1920px; /* Фиксируем максимальную ширину */
     margin: 0 auto; /* Центрируем на широких экранах */
     padding: 20px;
-    animation: fadeIn 3s;
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+
   }
   
   .info_block_grid {
@@ -70,8 +73,20 @@
     from {
         opacity: 0;
     }
+    0%{
+      opacity: 0;
+    }
+    25%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0;
+    }
     75%{
         opacity: 0;
+    }
+    99% {
+        opacity: 0; /* Держим прозрачность 0 почти до конца */
     }
     to {
         opacity: 1;
@@ -84,7 +99,7 @@
     max-width: 100%;
     padding: 150px;
     margin:  0  0px 0;
-    animation: fadeIn 4s;
+    animation: fadeIn 7s;
     
   }
   

@@ -35,6 +35,7 @@ html{
   75%{
       opacity: 0;
   }
+  
   to {
       opacity: 1;
   }
