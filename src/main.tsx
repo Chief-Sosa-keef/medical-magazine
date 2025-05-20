@@ -11,7 +11,7 @@ import EventPage from './pages/EventPage'
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter basename="">
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="" element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="catalog" element={<CatalogPage />} />
         <Route path="events" element={<Events />} />
