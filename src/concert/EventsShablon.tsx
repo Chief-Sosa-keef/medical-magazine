@@ -109,7 +109,7 @@ const EventTemplate: React.FC<EventTemplateProps> = ({
 
             <footer className="event-footer">
                 <div className="footer-content">
-                    <p className="footer-note"><span id='spin-emoji'><img src="../react.svg" alt="Адрес" className='img_in'/></span> Не упустите шанс присоединиться к нам!</p>
+                    <p className="footer-note"><span id='spin-emoji'><img src="react.svg" alt="Адрес" className='img_in'/></span> Не упустите шанс присоединиться к нам!</p>
                     <div className="footer-decor"></div>
                 </div>
             </footer>
