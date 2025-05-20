@@ -15,7 +15,7 @@
     .article-container {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 2rem;
+        padding: 0.5rem;
         font-family: 'Segoe UI', system-ui;
         line-height: 1.8;
         color: var(--text-color);
@@ -202,7 +202,7 @@
     
     @media (max-width: 768px) {
         .article-container {
-        padding: 1.5rem;
+        padding: 0rem;
         }
         
         .article-title {

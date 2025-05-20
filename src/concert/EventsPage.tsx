@@ -90,12 +90,11 @@ const EventsPage = () => {
 
                                 <p className="event-description">{event.description}</p>
                                 
-                                <Link to={`/events/${event.id}`}>
-                                    <button className="event-register-btn">
+                            
+                                    <button className="event-register-btn"> <Link to={`/events/${event.id}`}>
                                         Подробнее
-                                        <span className="arrow">→</span>
+                                        <span className="arrow">→</span> </Link>
                                     </button>
-                                </Link>
                             </div>
                         </div>
                     ))}
