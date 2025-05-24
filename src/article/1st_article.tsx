@@ -39,7 +39,10 @@
         authors={article.authors}
         date={article.date}
         tags={article.tags}
-        content={article.content}
+        content={{
+            sections: article.content.sections,
+            sources: article.content.sources // Переносим источники внутрь content
+    }}
         />
     );
     };
