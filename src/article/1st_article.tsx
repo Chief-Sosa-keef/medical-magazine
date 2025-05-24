@@ -36,7 +36,7 @@
     return (
         <ArticleTemplate
         title={article.title}
-        author={article.author}
+        authors={article.authors}
         date={article.date}
         tags={article.tags}
         content={article.content}

@@ -1,30 +1,33 @@
 import React from 'react';
 import './ArticleTemplate.css';
 
+    
 interface Section {
     id: string;
     title: string;
     text: string;
     image?: string;
     list?: string[];
-    }
+}
 
-    interface ArticleTemplateProps {
+interface Tag {
+    text: string;
+    anchor: string;
+}
+
+interface ArticleTemplateProps {
     title: string;
-    author: string;
-    date: string;
-    tags: Array<{
-        text: string;
-        anchor: string;
-    }>;
+    authors: { name: string }[]; // Поддержка массива авторов
+    date?: string;
+    tags: Tag[];
     content: {
         sections: Section[];
     };
-    }
+}
 
     const ArticleTemplate: React.FC<ArticleTemplateProps> = ({
     title,
-    author,
+    authors,
     date,
     tags,
     content
@@ -33,7 +36,7 @@ interface Section {
         <div className="article-container">
         <header className="article-header">
             <div className="meta-info">
-            <span className="author">{author}</span>
+            <span className="author">{authors.map((author) => author.name).join(', ')}</span>
             <span className="date">{date}</span>
             <div className="tags">
                 {tags.map(tag => (
